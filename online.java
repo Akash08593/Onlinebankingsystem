@@ -1,5 +1,5 @@
 import java.util.Scanner;
-class OnlineBanking
+class OnlineBankingsystem
   {
     static String name;
     static double balance=0;
