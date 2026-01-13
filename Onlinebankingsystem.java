@@ -7,10 +7,11 @@ class Onlinebankingsystem
     {
       Scanner sc=new Scanner(System.in);
       int choice;
+
       System.out.println("Online Banking System");
-      System.out.println("Enter Account holder name");
+      System.out.print("Enter Account holder name:");
       name=sc.nextLine();
-      System.out.println("Enter Balance");
+      System.out.print("Enter Balance:");
       balance=sc.nextDouble();
       do{
         System.out.println("MENU");
@@ -18,11 +19,16 @@ class Onlinebankingsystem
        System.out.println("2.Deposit");
        System.out.println("3.Withdrawal");
        System.out.println("4.Exit");
+       System.out.print("Enter your choice:");
+       choice=sc.nextInt();
       switch(choice){
         case 1:
-            System.out.println("Initial Balance:"+balance);
             
-            break;
+    System.out.println("\n--- CHECK BALANCE ---");
+    System.out.println("Current Balance: " + balance);
+    System.out.println("---------------------\n");
+    break;
+
           case 2:
             System.out.println("Enter amount to deposit");
             double deposit=sc.nextDouble();
@@ -32,7 +38,7 @@ class Onlinebankingsystem
           case 3:
             System.out.println("Enter amount to withdrawal:");
             double withdrawal=sc.nextDouble();
-            balance-=withdrwal;
+            balance-=withdrawal;
             System.out.println("Amount withdrawn succcessfully");
             break;
           case 4:
@@ -41,7 +47,8 @@ class Onlinebankingsystem
           default:
             System.out.println("Invalid choice");
             break;}
-            while(choice!=4);
+          
+        }  while(choice!=4);
             sc.close();
          
     }}
