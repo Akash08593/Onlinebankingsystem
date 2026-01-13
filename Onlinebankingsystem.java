@@ -42,6 +42,7 @@ class Onlinebankingsystem
             System.out.println("Invalid choice");
             break;}
             while(choice!=4);
+            sc.close();
          
     }}
             
