@@ -18,7 +18,7 @@ class Onlinebankingsystem
        System.out.println("2.Deposit");
        System.out.println("3.Withdrawal");
        System.out.println("4.Exit");
-      switch(choice)
+      switch(choice){
         case 1:
             System.out.println("Initial Balance:"+balance);
             
